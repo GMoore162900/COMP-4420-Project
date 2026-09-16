@@ -11,12 +11,12 @@ on:
     branches: [ "dev", "release" ]
 
 jobs:
-  cli-pipeline:
+  build:
+    
     runs-on: ubuntu-latest
+    
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
-
+      - uses: actions/checkout@v4
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
@@ -24,8 +24,12 @@ jobs:
           java-version: '17'
           cache: maven
 
-      - name: Verify with Maven
-        run: mvn -B verify
+      - name: Build with Maven
+        run: |
+          echo Testing Project
+          cd "code/Grocery List JavaFX Sample/"
+          mvn --batch-mode --update-snapshots clean verify
+          cd ../..
 
   
 
