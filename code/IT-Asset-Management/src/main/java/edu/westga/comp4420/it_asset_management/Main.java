@@ -1,6 +1,8 @@
 package edu.westga.comp4420.it_asset_management;
 
 import java.io.IOException;
+
+import edu.westga.comp4420.it_asset_management.model.Login;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
@@ -49,6 +51,7 @@ public class Main extends Application {
         Button loginButton = new Button("Login");
         loginButton.setOnAction(event -> {
             try {
+                new Login(emailField.getText(), passwordField.getText());
                 this.loadManagementScene(primaryStage);
             } catch (IllegalArgumentException exception) {
                 statusLabel.setText("Credentials rejected: " + exception.getMessage());
