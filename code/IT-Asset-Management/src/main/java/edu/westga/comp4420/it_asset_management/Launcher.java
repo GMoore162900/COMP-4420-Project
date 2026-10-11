@@ -1,4 +1,4 @@
-package edu.westga.comp4420.grocery_list;
+package edu.westga.comp4420.it_asset_management;
 
 /**
  * Entry point for the executable

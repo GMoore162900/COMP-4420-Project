@@ -1,4 +1,4 @@
-package edu.westga.comp4420.grocery_list.model;
+package edu.westga.comp4420.it_asset_management.model;
 
 import java.util.Locale;
 import java.util.regex.Pattern;
@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
  */
 public class Login {
     private static final Pattern VALID_EMAIL_PATTERN =
-            Pattern.compile("^[A-Za-z0-9._%+-]+@(?:westga|admin)\\.edu$");
+            Pattern.compile("^[A-Za-z0-9._%+-]+@(?:admin)\\.edu$");
 
     private final String email;
     private final String password;
@@ -27,7 +27,7 @@ public class Login {
      */
     public Login(String email, String password) {
         if (!isValidEmail(email)) {
-            throw new IllegalArgumentException("Email must end with @westga.edu or @admin.edu.");
+            throw new IllegalArgumentException("Use an email ending in @admin.edu.");
         }
         if (password == null || password.trim().isEmpty()) {
             throw new IllegalArgumentException("Password is required.");

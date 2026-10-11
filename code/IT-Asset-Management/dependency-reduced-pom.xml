@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>edu.westga</groupId>
-  <artifactId>Grocery-List-App</artifactId>
+  <artifactId>IT-Asset-Management</artifactId>
   <version>1.0-SNAPSHOT</version>
   <build>
     <plugins>
@@ -27,7 +27,7 @@
         <artifactId>javafx-maven-plugin</artifactId>
         <version>0.0.6</version>
         <configuration>
-          <mainClass>edu.westga.comp4420.grocery_list.Main</mainClass>
+          <mainClass>edu.westga.comp4420.it_asset_management.Main</mainClass>
         </configuration>
       </plugin>
       <plugin>
@@ -56,7 +56,7 @@
       <plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
-        <version>0.8.7</version>
+        <version>0.8.12</version>
         <executions>
           <execution>
             <goals>
@@ -80,8 +80,8 @@
                 <rule>
                   <element>PACKAGE</element>
                   <excludes>
-                    <exclude>edu.westga.comp4420.grocery_list.view.codebehind</exclude>
-                    <exclude>edu.westga.comp4420.grocery_list</exclude>
+                    <exclude>edu.westga.comp4420.it_asset_management.view</exclude>
+                    <exclude>edu.westga.comp4420.it_asset_management</exclude>
                   </excludes>
                   <limits>
                     <limit>
@@ -108,7 +108,7 @@
             <configuration>
               <transformers>
                 <transformer>
-                  <mainClass>edu.westga.comp4420.grocery_list.Launcher</mainClass>
+                  <mainClass>edu.westga.comp4420.it_asset_management.Launcher</mainClass>
                 </transformer>
               </transformers>
             </configuration>
@@ -133,7 +133,7 @@
               <dontWrapJar>false</dontWrapJar>
               <errTitle>Error in launch4j plugin</errTitle>
               <classPath>
-                <mainClass>edu.westga.comp4420.grocery_list.Launcher</mainClass>
+                <mainClass>edu.westga.comp4420.it_asset_management.Launcher</mainClass>
               </classPath>
               <jre>
                 <path>%JAVA_HOME%</path>
