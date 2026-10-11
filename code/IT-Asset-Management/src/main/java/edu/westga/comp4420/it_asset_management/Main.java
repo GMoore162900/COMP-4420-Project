@@ -1,8 +1,6 @@
 package edu.westga.comp4420.it_asset_management;
 
 import java.io.IOException;
-
-import edu.westga.comp4420.it_asset_management.model.Login;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
