@@ -27,11 +27,8 @@ jobs:
           cache: maven
 
       - name: Build with Maven
-        run: |
-          echo Testing Project
-          cd "code/Grocery List JavaFX Sample/"
-          mvn --batch-mode --update-snapshots clean verify
-          cd ../..
+        working-directory: code/Grocery List JavaFX Sample
+        run: mvn --batch-mode --update-snapshots clean verify
 
   
 
