@@ -13,7 +13,7 @@ on:
     - "release" 
 
 jobs:
-  build:
+  cli-pipeline:
     
     runs-on: ubuntu-latest
     
@@ -27,8 +27,11 @@ jobs:
           cache: maven
 
       - name: Build with Maven
-        working-directory: code/IT-Asset-Management
-        run: xvfb-run -a mvn --batch-mode --update-snapshots clean verify
+        run: |
+            echo Testing Project
+            cd "code/Grocery List JavaFX Sample/"
+            mvn --batch-mode --update-snapshots clean verify
+            cd ../..
 
   
 
