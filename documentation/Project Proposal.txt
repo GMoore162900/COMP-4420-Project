@@ -1,0 +1,19 @@
+Project Proposal
+
+The IT Inventory Management System will provide a centralized way for a university to track, 
+assign, and maintain electronic devices across departments and campus locations. 
+The system will manage equipment such as laptops, desktop computers, smart boards, laptop carts, 
+printers, routers, and switches. Through a simple graphical interface, authorized users will be 
+able to securely sign in, identify their department, assign available devices, update device conditions, 
+and return equipment. By supporting secure user access, due-date validation, device-status tracking, 
+and complete CRUD inventory management, the system can improve accountability, reduce equipment loss, 
+and help IT staff make informed decisions about repairs, replacements, and future technology needs.
+
+This project is especially valuable to me because I work in IT for a local middle school in my area, 
+where managing technology and equipment is an important part of supporting students and staff. My current 
+experience has given me an understanding of the importance of accurate inventory records, reliable equipment 
+assignments, and quick access to information when devices need maintenance or replacement. 
+Developing this application will allow me to apply that experience while challenging myself to design a 
+high-level management system capable of serving an entire university system. It will help me grow from 
+managing technology in a school environment to planning a secure, organized, and scalable solution for a 
+much larger and more complex organization.
