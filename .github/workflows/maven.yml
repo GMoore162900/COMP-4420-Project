@@ -27,9 +27,8 @@ jobs:
           cache: maven
 
       - name: Build with Maven
-        working-directory: code/Grocery List JavaFX Sample
+        working-directory: code/IT-Asset-Management
         run: mvn --batch-mode --update-snapshots clean verify
-
   
 
 
