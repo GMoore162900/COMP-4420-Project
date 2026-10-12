@@ -24,8 +24,7 @@ jobs:
 
       - name: Build with Maven
         working-directory: code/IT-Asset-Management
-        run: mvn --batch-mode --update-snapshots clean verify
-
+        run: xvfb-run -a mvn --batch-mode --update-snapshots clean verify
 
 
 
